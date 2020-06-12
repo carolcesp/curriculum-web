@@ -1,4 +1,5 @@
 GET http://localhost:3333/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk4ODkwNCwiZXhwaXJlQXQiOjE1OTE5ODkyMDR9.9ad_FsNoUtxEBDJg-64AMZfoNyYdsoqkLWLpmwH_rLA
 
 ###
 POST http://localhost:3333/api/proyectos
@@ -26,3 +27,6 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3333/api/proyectos/5ec1709ecfbbf808afef4ea5
+
+###
+GET http://localhost:3333/api/token
