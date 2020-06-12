@@ -1,0 +1,32 @@
+GET http://localhost:3333/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk4ODkwNCwiZXhwaXJlQXQiOjE1OTE5ODkyMDR9.9ad_FsNoUtxEBDJg-64AMZfoNyYdsoqkLWLpmwH_rLA
+
+###
+POST http://localhost:3333/api/proyectos
+Content-Type: application/json
+
+{
+  "titulo": "Proyecto de prueba",
+  "descripcion": "Esta es la descripción",
+  "url": "http://www.google.es",
+  "cliente": "Google",
+  "urlCliente": "http://www.google.es/quien-somos"
+}
+
+###
+PUT http://localhost:3333/api/proyectos/5ec172d2e9e09e0951267c88
+Content-Type: application/json
+
+{
+  "titulo": "Proyecto EDITADO V2",
+  "descripcion": "Esta es la descripción",
+  "url": "http://www.google.es",
+  "cliente": "Google",
+  "urlCliente": "http://www.google.es/quien-somos"
+}
+
+###
+DELETE http://localhost:3333/api/proyectos/5ec1709ecfbbf808afef4ea5
+
+###
+GET http://localhost:3333/api/token
