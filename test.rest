@@ -30,3 +30,9 @@ DELETE http://localhost:3333/api/proyectos/5ec1709ecfbbf808afef4ea5
 
 ###
 GET http://localhost:3333/api/token
+
+### PRODUCCIÓN
+GET https://cv-back-carol.herokuapp.com/api/proyectos
+
+###
+GET https://cv-back-carol.herokuapp.com/api/token
