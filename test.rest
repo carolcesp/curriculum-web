@@ -1,28 +1,36 @@
 GET http://localhost:3333/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk4ODkwNCwiZXhwaXJlQXQiOjE1OTE5ODkyMDR9.9ad_FsNoUtxEBDJg-64AMZfoNyYdsoqkLWLpmwH_rLA
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk5MjkwMiwiZXhwaXJlQXQiOjE1OTE5OTMyMDJ9.MIH0jJMyV3stexsrKPbjVXWPzpKKuSp9YXQ9vUsGLg0
+
+###
+GET http://localhost:3333/api/proyectos/frontend
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE1OTY1MiwiZXhwaXJlQXQiOjE1OTI3NjQ0NTJ9.C810PcTgC0dhgAD4rrFRlp0vTCqzjCNoyyrEODyPzcA
 
 ###
 POST http://localhost:3333/api/proyectos
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk5MjkwMiwiZXhwaXJlQXQiOjE1OTE5OTMyMDJ9.MIH0jJMyV3stexsrKPbjVXWPzpKKuSp9YXQ9vUsGLg0
 
 {
-  "titulo": "Proyecto de prueba",
-  "descripcion": "Esta es la descripción",
+  "titulo": "CV WEB",
+  "descripcion": "Mi portafolio :)",
   "url": "http://www.google.es",
   "cliente": "Google",
-  "urlCliente": "http://www.google.es/quien-somos"
+  "urlCliente": "http://www.google.es/quien-somos",
+  "categoria": "frontend"
 }
 
 ###
 PUT http://localhost:3333/api/proyectos/5ec172d2e9e09e0951267c88
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE1OTY1MiwiZXhwaXJlQXQiOjE1OTI3NjQ0NTJ9.C810PcTgC0dhgAD4rrFRlp0vTCqzjCNoyyrEODyPzcA
 
 {
   "titulo": "Proyecto EDITADO V2",
   "descripcion": "Esta es la descripción",
   "url": "http://www.google.es",
   "cliente": "Google",
-  "urlCliente": "http://www.google.es/quien-somos"
+  "urlCliente": "http://www.google.es/quien-somos",
+  "categoria": "frontend"
 }
 
 ###
@@ -33,6 +41,7 @@ GET http://localhost:3333/api/token
 
 ### PRODUCCIÓN
 GET https://cv-back-carol.herokuapp.com/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk5MjE2MywiZXhwaXJlQXQiOjE1OTE5OTI0NjN9.XsFvscEE0_QIt2HMMjkwkuLbYeFD5C18RyhBRNtwmkQ
 
 ###
 GET https://cv-back-carol.herokuapp.com/api/token

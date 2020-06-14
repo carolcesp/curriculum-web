@@ -9,6 +9,17 @@ router.get('/', async (req, res) => {
     try {
         const proyectos = await Proyecto.find()
         res.json(proyectos);
+        
+    } catch (err) {
+        res.status(503).json({ 'error': err });
+    }
+});
+
+router.get('/:categoria', async (req, res) => {
+    try {
+        const proyectos = await Proyecto.find({ categoria: req.params.categoria})
+        res.json(proyectos);
+
     } catch (err) {
         res.status(503).json({ 'error': err });
     }
@@ -17,9 +28,11 @@ router.get('/', async (req, res) => {
 router.post('/', [
     check('titulo', 'El titulo debe incluirse en la petición y tiene un máximo de 40 caracteres')
         .exists()
+        .notEmpty()
         .isLength({max: 40}),
     check('descripcion', 'La descripción debe incluirse en la petición y tiene un máximo de 300 caracteres')
         .exists()
+        .notEmpty()
         .isLength({max: 300}),
     check('url', 'La URL del proyecto debe estar corretca')
         .isURL()

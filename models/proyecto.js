@@ -6,7 +6,11 @@ let proyectoSchema = new Schema({
     descripcion: String,
     url: String,
     cliente: String,
-    urlCliente: String
+    urlCliente: String,
+    categoria: {
+        type: String,
+        enum: ['angular', 'frontend', 'nodejs']
+    }
 });
 
 module.exports = mongoose.model('Proyecto', proyectoSchema);
