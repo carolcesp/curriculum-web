@@ -1,4 +1,17 @@
-GET /api/proyectos - recuperar todos los proyectos
-POST /api/proyectos - crear un proyecto
-PUT /api/proyectos - editar un proyecto
-DELETE borrar un proyecto un proyecto
+**Curriculum web Backend Nodejs Express**
+
+Tecnologias utilizadas:
+
+- NodeJs
+- Jwt-simple
+- Mongoose
+- MomentJs
+- Heroku
+
+Instalar dependencias:
+***$ npm install***
+
+Arrancar proyecto:
+***$ npm run startdev***
+
+
