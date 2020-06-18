@@ -1,0 +1,17 @@
+.item-project {
+  border: 1px solid lightskyblue;
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  height: 300px;
+}
+
+.item-project h4 {
+  color: black;
+  font-weight: bold;
+  padding: 3%;
+  text-align: center;
+  height: 75px;
+}
