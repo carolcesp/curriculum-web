@@ -1,22 +1,27 @@
+###
 GET http://localhost:3333/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk5MjkwMiwiZXhwaXJlQXQiOjE1OTE5OTMyMDJ9.MIH0jJMyV3stexsrKPbjVXWPzpKKuSp9YXQ9vUsGLg0
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE2MTc1NCwiZXhwaXJlQXQiOjE1OTI3NjY1NTR9.VHG3CWmOrX_ziGRKIlcCNCo6-uqrgEz84A_-pJYlz1w
+
+### 
+GET http://localhost:3333/api/proyectos/5ee675f9b5efac5e721c192b
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE2MTc1NCwiZXhwaXJlQXQiOjE1OTI3NjY1NTR9.VHG3CWmOrX_ziGRKIlcCNCo6-uqrgEz84A_-pJYlz1w
 
 ###
-GET http://localhost:3333/api/proyectos/frontend
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE1OTY1MiwiZXhwaXJlQXQiOjE1OTI3NjQ0NTJ9.C810PcTgC0dhgAD4rrFRlp0vTCqzjCNoyyrEODyPzcA
+GET http://localhost:3333/api/proyectos/categoria/frontend
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE2MTc1NCwiZXhwaXJlQXQiOjE1OTI3NjY1NTR9.VHG3CWmOrX_ziGRKIlcCNCo6-uqrgEz84A_-pJYlz1w
 
 ###
 POST http://localhost:3333/api/proyectos
 Content-Type: application/json
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MTk5MjkwMiwiZXhwaXJlQXQiOjE1OTE5OTMyMDJ9.MIH0jJMyV3stexsrKPbjVXWPzpKKuSp9YXQ9vUsGLg0
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiY2Fyb2wiLCJjcmVhdGVBdCI6MTU5MjE2MTc1NCwiZXhwaXJlQXQiOjE1OTI3NjY1NTR9.VHG3CWmOrX_ziGRKIlcCNCo6-uqrgEz84A_-pJYlz1w
 
 {
-  "titulo": "CV WEB",
+  "titulo": "Curriculum web carol",
   "descripcion": "Mi portafolio :)",
   "url": "http://www.google.es",
   "cliente": "Google",
   "urlCliente": "http://www.google.es/quien-somos",
-  "categoria": "frontend"
+  "categoria": "nodejs"
 }
 
 ###
